@@ -1,6 +1,17 @@
 header {
-    background-color: #e9e2d8;
+    background-color: #5c757a;
     padding: 10px 0;
     text-align: center;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    background-color: #394a4f;
+    text-align: center;
+}
+footer {
+    background-color: #5c757a;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
