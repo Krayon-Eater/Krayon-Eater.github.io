@@ -6,7 +6,6 @@
 */
 
 body {
-
     background-color: antiquewhite;
     font-family: "komet", sans-serif;
     font-weight: 400;
@@ -14,7 +13,6 @@ body {
 }
 
 header {
-    
     background-color: #cb7702;
     text-align: center;
 
@@ -26,20 +24,13 @@ header {
     padding-top: 70px;
     padding-left: 0px;
     padding-right: 0px;
-    padding-bottom: 70px;
-
-
-    
+    padding-bottom: 70px;    
 }
 
 nav {
-
     background-color: #5b390a;
     text-align: center;
     padding: 20px 0px;
-
-
-
 }
 
 a {
@@ -48,25 +39,19 @@ a {
 }
 
 nav > a {
-
     padding: 10px 20px;
-
-    
 }
 
 main {
-
     text-align: center;
     padding: 0px 10vw;
 }
 
 img {
-
     width: 100%;
 }
 
 h1 {
-
     color: #5b390a;
     font-weight: 900;
 }
@@ -77,13 +62,11 @@ p {
 }
 
 header > h1 {
-
     color: rgb(235, 229, 141);
     font-size: 48pt;
 }
 
 footer {
-
     background-color: #5b390a;
     color: antiquewhite;
     min-height: 250px;
@@ -92,6 +75,5 @@ footer {
 }
 
 footer > p {
-
     color: antiquewhite;
 }
