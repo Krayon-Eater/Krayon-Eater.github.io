@@ -8,14 +8,19 @@
     color: red;
 }
 
-.green {
+.purple {
     
-        color: green;
+    color: purple;
 }
 
-.yellow {
+.gold {
 
-    color: yellow;
+    color: goldenrod;
+}
+
+.pink {
+    
+    color: pink;
 }
 
 .bold {
@@ -33,6 +38,15 @@
     text-decoration: underline;
 }
 
+.crossout {
+
+    text-decoration: line-through;
+}
+
 body {
     font-size: 18px;
+}
+
+.center {
+    text-align: center;
 }
