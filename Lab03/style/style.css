@@ -1,3 +1,23 @@
-p {
+.blue {
+    
+    color: blue;
+}
+
+.red {
+
     color: red;
+}
+
+.bold {
+
+    font-weight: bold;
+}
+
+.italic {
+
+    font-style: italic;
+}
+
+body {
+    font-size: 18px;
 }
