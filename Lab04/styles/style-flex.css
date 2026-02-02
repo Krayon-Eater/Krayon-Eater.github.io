@@ -7,15 +7,28 @@
 }
 
 #main-container {
-    width: 500px;
+    width: auto;
     height: 500px;
+    padding: 10px;
     background-color: aquamarine;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: flex; /* This rule activates flex layout for a container */
+    flex-direction: row; /* Determines the direction off the content flow */
+    justify-content: flex-start; /* Align items based on main axis */
+    align-items: center; /* Align items based on cross axis */
+    gap: 10px; /* Only works in flex and grid layouts */
+
+    overflow-x: scroll;
 }
 
 #main-container div {
     background-color: bisque;
     padding: 5px;
+    min-width: 600px;
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+
 }
