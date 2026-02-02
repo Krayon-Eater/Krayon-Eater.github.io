@@ -1,5 +1,6 @@
 body {
     background-color: #cbd7e4;
+    margin: 0px;
 }
 
 header {
@@ -23,6 +24,12 @@ section {
 img {
     width : 100%;
 }
+
+.crop-fit {
+    height: 600px; /* Creates a square container */
+    object-fit: cover; /* Crops the image to fit the container */
+    object-position: bottom; /* Focuses on the top part of the image */
+  }
 
 footer {
     background-color: #334A62;
@@ -48,17 +55,11 @@ footer {
 
 .right-section {
     background-color: #e0e0e0;
-}
-
-.crop-fit {
-    height: 600px; /* Creates a square container */
-    object-fit: cover; /* Crops the image to fit the container */
-    object-position: bottom; /* Focuses on the top part of the image */
-  }
-  
+    text-align: center;
+} 
   
 .pressio {
     font-family: "pressio", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
   }
