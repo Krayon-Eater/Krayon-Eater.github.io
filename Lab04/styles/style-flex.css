@@ -1,0 +1,21 @@
+* {
+    outline: 1px solid magenta;
+}
+
+:root {
+    font-size: 20px;
+}
+
+#main-container {
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main-container div {
+    background-color: bisque;
+    padding: 5px;
+}

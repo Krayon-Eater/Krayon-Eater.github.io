@@ -8,25 +8,34 @@ header {
     background-color: #334A62;
     padding: 10px 0;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    height: 80px;
 }
 
 nav {
-    color: #91a8c1;
     background-color: #111d2a;
-    text-align: center;
+    text-align: right;
+    justify-content: space-between;
     height: 50px;
+}
+
+nav > a {
+    color: #91a8c1;
+    text-decoration: none;
 }
 
 section {
     text-align: center;
 }
 
+p {
+    padding: 0 20px;
+    text-align: justify;
+}
+
 footer {
     background-color: #334A62;
     padding: 10px 0;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
@@ -49,7 +58,7 @@ footer {
     background-color: #f0f0f0;
     text-align: center;
 } 
-  
+/* Font Styles */
 .pressio {
     font-family: "pressio", sans-serif;
     font-weight: 600;
@@ -60,14 +69,12 @@ h1.pressio {
     font-size: 52px;
 }
 
-p {
-    font-family: "Arial", sans-serif;
-    font-size: 18px;
-    line-height: 1.2;
-    color: #333333;
-    padding: 20px;
-    text-align: center;
+.danshiell {
+    font-family: "dashiell-text", serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
 .full-img {
     width : 100%;
 }

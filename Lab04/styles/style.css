@@ -1,0 +1,19 @@
+:root {
+    font-size: 18px;
+}
+
+div {
+    outline: 3px solid magenta;
+    padding: 10px;
+    max-width: 300px;
+    max-height: 300px;
+    overflow: scroll;
+    transform: rotate(45deg) skewY(30deg);
+}
+
+p {
+    background-color: aqua;
+    padding: 5px;
+    min-width: 700px;
+
+}
