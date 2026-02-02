@@ -1,17 +1,18 @@
 body {
-    background-color: #e9e2d8;
+    background-color: #cbd7e4;
 }
 
 header {
-    background-color: #cb7a5c;
+    color: #91a8c1;
+    background-color: #334A62;
     padding: 10px 0;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
 
 nav {
-    color: #c7cdbf;
-    background-color: #5c757a;
+    color: #91a8c1;
+    background-color: #111d2a;
     text-align: center;
 }
 
@@ -20,12 +21,44 @@ section {
 }
 
 img {
-    width : 20%;
+    width : 100%;
 }
 
 footer {
-    background-color: #757f64;
+    background-color: #334A62;
     padding: 10px 0;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
+
+.container {
+    display: flex; /* Aligns children side-by-side */
+    min-height: 100vh; /* Optional: Makes the container fill the screen height */
+}
+
+.left-section, .right-section {
+    flex: 1; /* Makes both sections equal width */
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding/border is included in the width */
+}
+
+.left-section {
+    background-color: #f0f0f0;
+}
+
+.right-section {
+    background-color: #e0e0e0;
+}
+
+.crop-fit {
+    height: 600px; /* Creates a square container */
+    object-fit: cover; /* Crops the image to fit the container */
+    object-position: bottom; /* Focuses on the top part of the image */
+  }
+  
+  
+.pressio {
+    font-family: "pressio", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
