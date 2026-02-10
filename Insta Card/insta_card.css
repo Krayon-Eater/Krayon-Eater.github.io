@@ -66,14 +66,14 @@
     align-items: center;
     justify-content: space-between;
 }
-/* 
+
 #insta-card-footer .icons {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 15px;
 }
-
+/*
 #insta-card-footer .icons img {
     width: 30px;
     height: 30px;
