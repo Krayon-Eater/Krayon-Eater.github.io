@@ -8,6 +8,12 @@
     flex-direction: row;
 }
 
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+}
+
 #main-container {
     width: 100vw;
     height: 100vh;
