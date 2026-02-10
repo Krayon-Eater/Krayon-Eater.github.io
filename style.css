@@ -1,0 +1,30 @@
+* {
+    outline: red 1px solid;
+    margin: 0px;
+}
+
+header {
+    background-color: coral;
+}
+
+nav {
+    background-color: lightblue;
+}
+
+main {
+    background-color: lightgreen;
+}
+
+footer {
+    background-color: lightgray;
+}
+
+#main-container {
+    width:100vw;
+    height:100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
