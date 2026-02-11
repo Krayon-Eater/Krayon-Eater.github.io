@@ -1,0 +1,69 @@
+:root {
+    font-size: 18pt;
+}
+
+* {
+    outline: 2px solid magenta;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* I will remove this later */
+}
+
+header, nav, main, footer {
+
+}
+
+header {
+    background-color: aqua;
+    height: 200px;
+}
+
+nav {
+    background-color: rgb(89, 206, 21);
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5rem;
+
+    font-size: 1.5rem;
+}
+
+nav a:link {
+    background-color: seagreen;
+    color: thistle;
+}
+
+main {
+    background-color: aliceblue;
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+aside {
+    background-color: rgb(21, 119, 206);
+    width: 300px;
+}
+
+article {
+    background-color: rgb(27, 189, 129);
+    flex-grow: 1;
+}
+
+footer {
+    background-color: rgb(188, 24, 90);
+    min-height: 300px;
+}

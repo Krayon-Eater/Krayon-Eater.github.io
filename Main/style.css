@@ -18,6 +18,19 @@ footer {
     background-color: lightgray;
 }
 */
+#header-container {
+    width: 100vw;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(11, 10, 11);
+    color:aliceblue;
+}
+
 #main-container {
     width:100vw;
     height:100vh;
@@ -32,13 +45,13 @@ footer {
     width: 100vw;
 
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .project{
-    width: 50%;
+    width: 30%;
     height: 200px;
 
     display: flex;
