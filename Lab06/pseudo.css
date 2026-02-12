@@ -37,11 +37,16 @@ nav a {
     padding: 0.5rem;
 
     font-size: 1.5rem;
+    text-decoration: none;
 }
 
 nav a:link {
-    background-color: seagreen;
-    color: thistle;
+    color: rgb(197, 26, 197);
+}
+
+nav a:hover {
+    color: rgb(218, 212, 197);
+    background-color: rgb(201, 141, 21);
 }
 
 main {
@@ -56,6 +61,13 @@ main {
 aside {
     background-color: rgb(21, 119, 206);
     width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+
+    padding: 10px;
 }
 
 article {

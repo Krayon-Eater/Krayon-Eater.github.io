@@ -18,7 +18,7 @@ footer {
     background-color: lightgray;
 }
 */
-#header-container {
+#header {
     width: 100vw;
     height: 10vh;
 
@@ -31,7 +31,7 @@ footer {
     color:aliceblue;
 }
 
-#main-container {
+#main {
     width:100vw;
     height:100vh;
 
@@ -39,6 +39,10 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+#footer {
+    width: 100vw;
 }
 
 #projects-container {
@@ -50,8 +54,8 @@ footer {
     align-items: center;
 }
 
-.project{
-    width: 30%;
+.project {
+    width: 350px;
     height: 200px;
 
     display: flex;
@@ -59,3 +63,16 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+/* Centered text for project titles */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
