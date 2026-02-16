@@ -5,28 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram Card</title>
 
-    <link rel="stylesheet" href="insta_card.css">
+    <link rel="stylesheet" href="insta-card.css">
 </head>
-<body id="main-container">
-    <div id="insta-card">
+<body>
+    <div id="main-container">
+        <div id="insta-card">
+            <!--Post Header-->
             <div id="insta-card-header">
-                <img id="profile-pic" src="img/profile-pic.jpeg" alt="profile-pic">
-                <div>
-                    <div class="arial"><b>Krayon_Eater843</b></div>
-                    <div class="arial">San Francisco, CA</div>
+                <div id="profile-info">
+                    <!--Pfp-->
+                    <img id="profile-pic" src="img/pfp.jpg" alt="profile-pic">
+                    <div>
+                        <div id="user-info">
+                            <!--User Info-->
+                            <div class="arial"><b>Krayon_Eater843</b></div>
+                            <div class="arial light-grey">• 3 days ago</div>
+                        </div>
+                        <!--Location-->
+                        <div class="arial">San Francisco, CA</div>
+                    </div>
                 </div>
-                ...
+                <div>...</div>
             </div>
-        <img id="insta-card-img" src="img/profile-pic.jpeg" alt="snowy mountains">
-        <div id="insta-card-footer">
-            <div>
-                <div class="icons"></div>
-                <div class="icons"></div>
-                <div class="icons"></div>
+            <!--Post Photo-->
+            <img id="insta-card-img" src="img/post-photo.jpg" alt="snowy mountains">
+            <!--Post Footer-->
+            <div id="footer-icons">
+                <div id="primary-icons">
+                    <div id="like" class="icons"></div>
+                    <div class="arial"><b>10</b></div>
+
+                    <div id="comment" class="icons"></div>
+                    <div class="arial"><b>2</b></div>
+
+                    <div id="share" class="icons"></div>
+                    <div class="arial"><b>5</b></div>
+                </div>
+                <div id="secondary-icons">
+                    <div id="save" class="icons"></div>
+                </div>
             </div>
-            <div>
-                <div>Caption</div>
-                <div>Comments</div>
+            <!--Caption-->
+            <div id="caption" class="arial">
+                <b>Krayon_Eater843</b> Went to the mountains yesterday and it was so cool!! #nature #mountains ... <span class="light-grey">more</span>
             </div>
         </div>
     </div>

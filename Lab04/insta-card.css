@@ -1,17 +1,11 @@
-
-* {
-    outline: red solid 1px;
-}
-
-.icons {
-    background-color: rgb(135, 135, 135);
-    flex-direction: row;
-}
-
 .arial {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-size: 12px;
+}
+
+.light-grey {
+    color: rgb(100, 100, 100);
 }
 
 #main-container {
@@ -29,19 +23,21 @@
 }
 
 #insta-card {
-    width: 400px;
-    height: 700px;
+    width: 350px;
+    height: 600px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 
     padding: 12px;
+    gap: 6px;
     border-radius: 15px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
+/* Instagram Header */
 #insta-card-header {
     width: 100%;
     height: 50px;
@@ -49,9 +45,24 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
+}
 
+#profile-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
     gap: 10px;
+}
+
+#user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
 }
 
 #profile-pic {
@@ -61,6 +72,7 @@
     border-radius: 50%;
 }
 
+/* Instagram Post Image */
 #insta-card-img {
     width: 100%;
     height: 450px;
@@ -70,29 +82,52 @@
     background-color: rgb(70, 70, 70);
 }
 
+/* Instagram Footer */
+.icons {
+    background-color: rgb(135, 135, 135);
+}
+
 #insta-card-footer {
     width: 100%;
-    height: 100px;
+    height: 150px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+#footer-icons {
+    width: 100%;
+    height: 30px;
+
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-#insta-card-footer .icons {
-    width: 25px;
-    height: 25px;
+#primary-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    
+    gap: 6px;
+}
+
+#secondary-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+#like, #comment, #share, #save {
+    width: 30px;
+    height: 30px;
 
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     gap: 15px;
 }
-/*
-#insta-card-footer .icons img {
-    width: 30px;
-    height: 30px;
-}
-*/
