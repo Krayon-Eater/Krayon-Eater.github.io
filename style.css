@@ -1,15 +1,25 @@
 * {
-    outline: red solid 1px;
+    outline: rgb(0, 0, 0) solid 1px;
 }
 
 :root {
     font-size: 18px;
     font-family: sans-serif;
 }
-
+/* Fonts */
 .kuhlman {
     font-family: "kuhlman-vf", sans-serif;
-    font-variation-settings: "SEED" 0, "wdth" 100;
+    font-variation-settings: "SEED" 2, "wdth" 100;
+}
+
+.lapture {
+    font-family: "jaf-lapture", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,7 +30,9 @@ body {
 
 header {
     width: 100vw;
-    height: 15vh;
+    height: 10vh;
+    position: sticky;
+    top: 0px;
 
     display: flex;
     flex-direction: row;
@@ -28,20 +40,43 @@ header {
     align-items: center;
     gap: 15px;
 
-    background-color: rgb(11, 10, 11);
+    background-color: rgb(19, 25, 39);
     color:aliceblue;
 }
 
-#nav {
+nav {
     width: 100vw;
-    height: 10vh;
+    height: 5vh;
+    position: sticky;
+    top: 10vh;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
-    background-color: rgb(11, 10, 11);
+    gap: 15px;
+    background-color: rgb(19, 25, 39);
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5rem;
+
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#interum {
+    width: 100vw;
+    height: 500px;
+
+    background-image: url(/MEDIA/goat-rock.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 main {
@@ -51,15 +86,75 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: top;
+}
+
+aside {
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+
+    padding: 10px;
+    padding-left: 50px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+
+    flex-grow: 1;
+    padding: 30px;
+    gap: 15px;
+}
+
+.project {
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.project div {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#Labo1, #Labo2, #Labo3, #Labo4, #Labo5 {
+    scroll-margin-top: 20vh;
 }
 
 footer {
     width: 100vw;
     height: 15vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#projects-container {
+/* #projects-container {
     width: 100vw;
 
     display: flex;
@@ -70,13 +165,4 @@ footer {
     gap: 10px;
     padding: 10px;
 }
-
-.project {
-    width: 350px;
-    height: 200px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+*/
