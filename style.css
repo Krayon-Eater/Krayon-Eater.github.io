@@ -1,10 +1,9 @@
 
 
 
-
 :root {
     font-size: 18px;
-    font-family: sans-serif;
+    font-family: kuhlman, sans-serif;
     color: #161327;
 }
 /* Fonts */
@@ -54,18 +53,17 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    padding: 0px 30px;
-
-    background-color: #161327;
-    color:#fcd3c1;
+    background-color: #1b191c;
+    color:#dd3c0e;
 }
 
 header div {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 10px;
+
+    padding: 0px 50px;
 }
 
 header div a {
@@ -73,31 +71,23 @@ header div a {
 
     font-size: 1rem;
     text-decoration: none;
-    color: #fcd3c1;
+    color: #dd3c0e;
 }
 
-nav {
-    width: 100vw;
-    height: 5vh;
-    position: sticky;
-    top: 10vh;
+header div a:hover {
+    transform: scale(1.1);
+    
+    background-color: #647c2e;
+    color: #1b191c;
+}
 
+#pages {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     gap: 15px;
-    background-color: #161327;
-}
-
-nav a {
-    display: inline-block;
-    padding: 0.5rem;
-
-    font-size: 1rem;
-    text-decoration: none;
-    color: #fcd3c1;
 }
 
 #interum {
@@ -111,27 +101,6 @@ nav a {
     background-attachment: fixed;
 }
 
-#interum h1, #interum h4 {
-    width: 80%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    color:#fcd3c1;
-}
-
-#interum h1 {
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-#interum h4 {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
 main {
     width: 100vw;
     height: auto;
@@ -140,9 +109,9 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: top;
-    background-color: #72854f;
+    background-color: #dd3c0e;
     /*background-color: #5d854f;*/
-    border-top: 10px solid #161327;
+    border-top: 10px solid #1b191c;
 }
 
 aside {
@@ -158,8 +127,8 @@ aside {
     padding-left: 50px;
 }
 
-aside h2 {
-    font-size: 1.5rem;
+aside h1 {
+    font-size: 3rem;
 }
 
 aside a {
@@ -168,14 +137,16 @@ aside a {
 
     font-size: 1rem;
     text-decoration: none;
-    border-bottom: 3px solid #161327;
+    border-bottom: 3px solid #1b191c;
     color: rgb(19, 25, 39);
 }
 
 aside a:hover {
-    background-color: #161327;
-    color: #fcd3c1;
     transform: scale(1.1);
+    border-bottom: 0px;
+
+    background-color: #647c2e;
+    color: #1b191c;
 }
 article {
     display: flex;
@@ -241,8 +212,8 @@ footer {
     align-items: center;
     gap: 15px;
 
-    background-color: #161327;
-    color:#fcd3c1;
+    background-color: #1b191c;
+    color:#dd3c0e;
 }
 
 /* #projects-container {
