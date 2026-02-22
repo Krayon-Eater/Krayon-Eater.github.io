@@ -1,3 +1,6 @@
+* {
+    outline: greenyellow 1px solid;
+}
 
 :root {
     font-size: 18px;
@@ -117,6 +120,7 @@ main {
 aside {
     min-width: 300px;
     position: sticky;
+    top: 80px;
 
     display: flex;
     flex-direction: column;
@@ -134,16 +138,19 @@ aside h1 {
 aside a {
     display: inline-block;
     padding: 0.5rem;
+    gap: 15px;
 
     font-size: 1rem;
     text-decoration: none;
-    border-bottom: 3px solid #1b191c;
+    border-left: 3px solid #1b191c;
+    border-right: 3px solid #1b191c;
+    border-top: 3px solid #1b191c;
+    border-bottom: 8px solid #1b191c;
     color: rgb(19, 25, 39);
 }
 
 aside a:hover {
     transform: scale(1.1);
-    border-bottom: 0px;
 
     background-color: #647c2e;
     color: #1b191c;
@@ -168,7 +175,6 @@ article {
     justify-content: center;
     align-items: center;
 
-    padding: 10px;
     gap: 10px;
 }
 
@@ -215,16 +221,3 @@ footer {
     background-color: #1b191c;
     color:#dd3c0e;
 }
-
-/* #projects-container {
-    width: 100vw;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-
-    gap: 10px;
-    padding: 10px;
-}
-*/
