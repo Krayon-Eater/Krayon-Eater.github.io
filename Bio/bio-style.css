@@ -1,26 +1,103 @@
+
+:root {
+    font-size: 18px;
+    font-family: "jaf-lapture", serif;
+    color: #1b191c;
+}
+/* Fonts */
+.kuhlman {
+    font-family: "kuhlman-vf", sans-serif;
+    font-variation-settings: "SEED" 1, "wdth" 100;
+}
+
+.lapture {
+    font-family: "jaf-lapture", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.carilliantine {
+    font-family: "carilliantine", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #f0f0f0;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#pages {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap: 15px;
 }
 
 header {
-    color: #91a8c1;
-    background-color: #334A62;
-    padding: 10px 0;
-    text-align: center;
-    height: 80px;
-}
+    width: 100vw;
+    height: 15vh;
+    position: sticky;
+    top: 0px;
 
-nav {
-    background-color: #111d2a;
-    text-align: right;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    height: 50px;
+    align-items: center;
+
+    background-color: #1b191c;
+    color:#dd3c0e;
 }
 
-nav > a {
-    color: #91a8c1;
+header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 0px 50px;
+}
+
+header div a {
+    display: inline-block;
+
+    font-size: 1rem;
     text-decoration: none;
+    color: #dd3c0e;
+}
+
+header div a:hover {
+    transform: scale(1.1);
+    
+    background-color: #647c2e;
+    color: #1b191c;
+}
+
+main {
+    width: 100vw;
+    height: auto;
+    border-top: 10px solid #1b191c;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    background-color: #dd3c0e;
 }
 
 section {
@@ -33,9 +110,17 @@ p {
 }
 
 footer {
-    background-color: #334A62;
-    padding: 10px 0;
-    text-align: center;
+    width: 100vw;
+    height: 15vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    background-color: #1b191c;
+    color:#dd3c0e;
 }
 
 .container {
