@@ -115,7 +115,7 @@ main {
 }
 
 aside {
-    min-width: 300px;
+    max-width: 350px;
     height: 15vh;
     position: sticky;
     top: 15vh;
