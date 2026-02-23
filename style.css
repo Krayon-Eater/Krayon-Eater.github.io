@@ -41,10 +41,10 @@ body {
 }
 
 header {
+    position: fixed;
     width: 100vw;
     height: 15vh;
-    position: sticky;
-    top: 0px;
+    z-index: 1;
 
     display: flex;
     flex-direction: row;
@@ -115,18 +115,16 @@ main {
 }
 
 aside {
-    max-width: 350px;
-    height: 15vh;
     position: sticky;
     top: 15vh;
+    min-width: 400px;
+    height: 15vh;
+    padding: 10px 50px;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: left;
-
-    padding: 10px;
-    padding-left: 50px;
 }
 
 aside h1 {
@@ -161,7 +159,7 @@ article {
     align-items: center;
 
     flex-grow: 1;
-    padding: 30px;
+    padding: 50px;
     gap: 15px;
 }
 

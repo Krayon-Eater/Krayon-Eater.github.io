@@ -1,0 +1,78 @@
+* {
+    outline: 2px solid red;
+}
+
+:root {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18pt;
+}
+
+body {
+
+    background-color: lightblue;
+}
+
+header {
+    z-index: 100;
+    position: fixed;
+    top: 0px;
+
+    width: 100%;
+    padding: 20px;
+
+    background-color: lightcoral;
+}
+
+main {
+    width: 60vw;
+    margin-top: 200px;
+
+    background-color: lightgreen;
+}
+
+main div {
+    position: relative;
+    min-height: 200px;
+
+    background-color: antiquewhite;
+}
+
+main div:nth-of-type(1) p{
+    width: 60%;
+}
+
+.dude {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    max-width: 100px;
+}
+
+.football {
+    position: absolute;
+    top: 110px;
+    left: 80px;
+
+    max-width: 20px;
+}
+
+.call {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    max-width: 50px;
+
+    background-color: lightyellow;
+}
+
+.forest {
+    position: sticky;
+    top: 200px;
+    left: 0px;
+
+    width: 40%;
+
+    background-color: lightseagreen;
+}
