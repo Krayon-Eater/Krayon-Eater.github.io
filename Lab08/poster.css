@@ -1,0 +1,120 @@
+
+
+:root {
+    background-color: #f0f0f0;
+}
+
+/* Font Styles */
+.davis {
+    font-family: "davis", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sofia {
+    font-family: "sofia-pro-condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.liebling {
+    font-family: "liebling", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.joc {
+    font-family: "joc", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+/* Text Styles */
+.burgundy {
+    color: #2f2325;
+}
+
+.sandstone {
+    background-color: #988668;
+}
+
+.white {
+    color: #cec5c2;
+}
+
+/* Global Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.poster {
+    position: relative;
+    width: 500px;
+    height: 700px;
+
+    border: #2f2325 solid 5px;
+}
+
+#one {
+    position: absolute;
+    bottom: -140px;
+    left: 10px;
+
+    font-size: 500pt;
+}
+
+#letter-o {
+    position: absolute;
+    bottom: 180px;
+    right: 180px;
+
+    font-size: 120pt;
+}
+
+#letter-p {
+    position: absolute;
+    bottom: 120px;
+    right: 18px;
+
+    transform: rotate(-40deg);
+    font-size: 250pt;
+}
+
+#roun {
+    position: absolute;
+    top: 250px;
+    right: 80px;
+
+    transform: rotate(25deg);
+    font-size: 24pt;
+}
+
+#el {
+    position: absolute;
+    top: 150px;
+    right: 200px;
+
+    font-size: 24pt;
+}
+
+#lissitzky {
+    position: absolute;
+    top: 160px;
+    right: 80px;
+
+    transform: rotate(25deg);
+    font-size: 24pt;
+}
+
+#kestnermappe {
+    position: absolute;
+    bottom: 100px;
+    right: 160px;
+}
