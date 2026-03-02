@@ -1,0 +1,25 @@
+* {
+    outline: red solid 1px;
+}
+
+:root {
+    font-size: 18px;
+}
+
+body {
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#header {
+
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    height: 100%;
+    min-width: 80vw;
+}
