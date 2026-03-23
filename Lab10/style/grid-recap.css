@@ -1,0 +1,44 @@
+
+
+
+#chessboard {
+    display: grid;
+    width: 90vw;
+    aspect-ratio: 1/1;
+    gap: .8rem;
+    padding: .8rem;
+    grid-template-columns: .5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    background-color: rgb(118, 76, 13);
+}
+
+#chessboard div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chessboard div:nth-child(odd) {
+    color: white;
+    background-color: black;
+}
+
+#chessboard div:nth-child(odd):hover {
+    transform: scale3d(1.2, 2.0, 1.2);
+
+    color: rgb(162, 226, 140);
+    background-color: rgb(103, 17, 17);
+}
+
+#chessboard div:nth-child(even) {
+    color: black;
+    background-color: white;
+}
+
+#chessboard div:nth-child(even):hover {
+    transform: scale3d(2.0, 1.2, 2.0);
+
+    color: rgb(103, 17, 17);
+    background-color: rgb(162, 226, 140);
+}
