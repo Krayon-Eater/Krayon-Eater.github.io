@@ -1,0 +1,63 @@
+
+.pool-table {
+    height: 400px;
+    width: 600px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+}
+
+.pool-ball {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.circle-linear {
+
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 0.5s linear;
+
+    background-image: url(img/ball1.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.circle-ease:hover {
+
+    height: 300px;
+    width: 300px;
+}
+
+.circle-linear:hover {
+
+    height: 300px;
+    width: 300px;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+@keyframes circleMove {
+    0% {
+        transform: translateY(80vh);
+    }
+    50% {
+        transform: translateY(80px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
