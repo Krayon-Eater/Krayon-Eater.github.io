@@ -1,0 +1,170 @@
+* {
+    outline: 1px solid red;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 18px;
+}
+
+/* Global Styles */
+
+body {
+    margin: 0;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100px;
+    padding: 0px var(--containerPadding);
+
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    background-color: blanchedalmond;
+}
+
+nav {
+    justify-self: right;
+    display: flex;
+    gap: 1rem;
+
+}
+
+footer {
+    height: 100px;
+    background-color: blanchedalmond;
+}
+/* Utility Classes */
+
+.flexH {display: flex; flex-direction: row;}
+
+.flexV {display: flex; flex-direction: column;}
+
+.flexH-center {justify-content: center;}
+
+.flexV-center {align-items: center;}
+
+section#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.hero-text {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+img {
+    width: 70%;
+    height: auto;
+}
+
+section#poster {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Carousel Styles */
+
+section#carousel {
+    background-color: lime;
+    overflow-x: hidden;
+}
+
+#carousel-wrap {
+    display: flex;
+    flex-direction: row;
+    animation: carousel-move 15s linear infinite;
+}
+
+section#carousel > div {
+    display: flex;
+    flex-direction: row;
+}
+
+#carousel-wrap > div {
+    min-width: 300px;
+    min-height: 300px;
+}
+
+#carousel-wrap > div:nth-child(odd) {
+    background-color: lightseagreen;
+}
+
+#carousel-wrap > div:nth-child(even) {
+    background-color: lightcoral;
+}
+
+@keyframes carousel-move {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-2700px);}
+}
+
+/* Styles for Desktop Layout */
+
+@media screen and (min-width: 992px) {
+
+    nav > a:nth-of-type(1) {
+
+    }
+    
+    nav > a:nth-of-type(1), nav > a:nth-of-type(1), nav > a:nth-of-type(1), nav > a:nth-of-type(1) {
+        display: none;
+    }
+
+    section#poster {
+        display: grid;
+        grid-template-columns: 1fr, 4r, 1fr;
+    }
+
+    section#poster > div {
+        grid-column: 2;
+        grid-column: 1;
+    }
+
+    #students {
+        grid-template-columns: repeat(1, 1fr 4fr 1fr);
+    }
+}
+
+/* Student Page Layout */
+
+#students {
+    padding: 2rem;
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 3fr 1fr);
+
+    background-color: rgb(213, 110, 211);
+}
+
+#student-grid {
+    grid-column: 2;
+    padding: 1rem;
+
+    background-color: rgb(63, 165, 186);
+}
+
+.student-card {
+    width: 30%;
+    height: 100px;
+    padding: 1rem;
+
+    background-color: rgb(223, 153, 61);
+}
+
+.img-placeholder {
+    width: 100%;
+    height: 50%;
+
+    background-color: rgb(225, 225, 225);
+}
